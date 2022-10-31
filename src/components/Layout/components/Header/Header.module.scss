@@ -1,12 +1,94 @@
 .wrapper {
     height: var(--default-layout-header-height);
     box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
-    display: flex;
-    justify-content: center;
     width: 100%;
+    background-color: #f3f3f3;
 }
 
 .inner {
     height: 100%;
     width: var(--default-layout-width);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.header-navbar {
+    flex: 1;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .navbar-items {
+        padding: 0 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        transition: all 0.3s;
+        cursor: pointer;
+        a {
+            color: #333;
+            font-size: 1.8rem;
+            text-decoration: none;
+        }
+        .active, &:hover {
+            background-image: var(--color-gradient);
+            color: #fff;
+        }
+    }
+
+    .navbar-items.active{
+        background-image: var(--color-gradient);
+        color: #fff;
+    }
+}
+
+.navbar-control {
+    .btn {
+        font-size: 1.8rem;
+        color: #3f3f3f;
+        padding: 10px 20px;
+        min-width: 130px;
+        height: 45px;
+        background-color: transparent;
+        margin-left: 10px;
+        border: none;
+        // border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+    .btn.btn--gradient {
+        background-image: var(--color-gradient);
+        background-size: 150% 150%;
+        color: #fff;
+        transition: all 0.5s;
+
+        &:hover {
+            background-position: 100% 100%;
+        }
+    }
+
+    .btn.btn--outline {
+        font-weight: bold;
+        background: none;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 3px;
+        border-image-source: var(--color-gradient);
+        background: -webkit-linear-gradient(90deg, #009ffd, #2a2a72);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }

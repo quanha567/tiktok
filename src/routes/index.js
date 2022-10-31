@@ -5,8 +5,8 @@ import Following from '~/pages/Following';
 import Upload from '~/pages/Upload';
 
 const publicRoutes = [
-    { path: '/', component: Home },
-    { path: '/following', component: Following },
+    { path: '/', component: Home, layout: HeaderOnly },
+    { path: '/following', component: Following, layout: HeaderOnly },
     { path: '/upload', component: Upload, layout: HeaderOnly },
 ];
 
