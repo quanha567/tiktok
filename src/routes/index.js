@@ -5,9 +5,19 @@ import Following from '~/pages/Following';
 import Upload from '~/pages/Upload';
 
 const publicRoutes = [
-    { path: '/', component: Home, layout: HeaderOnly },
-    { path: '/following', component: Following, layout: HeaderOnly },
-    { path: '/upload', component: Upload, layout: HeaderOnly },
+    { path: '/', component: Home, layout: HeaderOnly, title: 'Trang chủ' },
+    {
+        path: '/following',
+        component: Following,
+        layout: HeaderOnly,
+        title: 'Khóa học',
+    },
+    {
+        path: '/about',
+        component: Upload,
+        layout: HeaderOnly,
+        title: 'Giới thiệu',
+    },
 ];
 
 //require login to view content

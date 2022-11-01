@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 export default function Logo({ src }) {
     return (
-        <Link to='/' className={cx('logo-link')}>
+        <Link to="/" className={cx('logo-link')}>
             <img src={src} alt="Logo" className={cx('logo')} />
         </Link>
     );
