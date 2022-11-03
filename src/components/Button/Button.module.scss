@@ -1,13 +1,12 @@
 .btn {
-    font-size: 1.8rem;
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
     color: #3f3f3f;
-    padding: 10px 20px;
-    min-width: 130px;
-    height: 45px;
-    background-color: transparent;
-    margin-left: 10px;
+    padding: 10px 15px;
     border: none;
-    //  border-radius: 5px;
+    border-radius: 20px;
     outline: none;
     cursor: pointer;
     background-color: #fff;
@@ -15,7 +14,7 @@
 
 .btn.btn--gradient {
     background-image: var(--color-gradient);
-    background-size: 150% 150%;
+    background-size: 120% 100%;
     color: #fff;
     transition: all 0.5s;
 
@@ -32,6 +31,6 @@
     border-image-source: var(--color-gradient);
 
     &:hover {
-        background-color: rgba($color: #6A5AF9, $alpha: 0.1);
+        background-color: rgba($color: #6a5af9, $alpha: 0.1);
     }
 }

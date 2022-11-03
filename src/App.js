@@ -5,8 +5,8 @@ import { DefaultLayout } from './components/Layout';
 
 function App() {
     return (
-        <Router>
-            <div className="App">
+        <div className="App">
+            <Router>
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         const Page = route.component;
@@ -29,8 +29,8 @@ function App() {
                         );
                     })}
                 </Routes>
-            </div>
-        </Router>
+            </Router>
+        </div>
     );
 }
 

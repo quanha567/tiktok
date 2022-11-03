@@ -10,7 +10,8 @@ export default function Button({ title, outline, gradient }) {
         <button
             className={cx(
                 'btn',
-                outline ? 'btn--outline' : gradient ? 'btn--gradient' : '',
+                { 'btn--outline': outline },
+                { 'btn--gradient': gradient },
             )}
         >
             {title}

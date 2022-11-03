@@ -1,0 +1,26 @@
+.navbar-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .navbar-item {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        color: #333;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 30px;
+
+        &.active,
+        &:hover {
+            background-image: var(--color-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+    }
+}

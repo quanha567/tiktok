@@ -4,6 +4,7 @@
 :root {
     --primary-color: #5de6de;
     --color-gradient: linear-gradient(to left, #b58ecc, #5de6de);
+    --font-family: 'Roboto Mono', monospace;
 
     //default layout
     --default-layout-header-height: 60px;
@@ -23,7 +24,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
